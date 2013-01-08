@@ -1,7 +1,7 @@
-sina weibo comments grab
+sina weibo comments spider
 ===========
 
-+ extract weibo user's basic information, such as _statuses_,_comments_.
++ extract weibo user's basic information, such as _statuses_ _comments_.
 this is official documentation[1].
 
 weibo.py
@@ -13,7 +13,7 @@ weibo.py
 spider.py
 --------------------
 
-+ Collect any user's followeing list persons' top 50 _statuses_ and then get top 50 _comments_, at last I grab the comments that I need
++ Collect any user's followeing list persons' top 100 _statuses_ and then get top 50 _comments_, at last I grab the comments that I need
 
 Usage:
 
