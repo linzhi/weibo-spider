@@ -24,9 +24,10 @@ class WeiboSpider:
         '''
         self.user_id = user_id
 
+        friendship = client.get.friendships__friends__ids(uid=user_id)
+
         uid_set = []
 
-        friendship = client.get.friendships__friends__ids(uid=user_id)
         for each_uid in friendship.ids:
             uid_set.append(each_uid)
 
