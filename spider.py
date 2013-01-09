@@ -1,7 +1,6 @@
 #! /usr/bin/env python
 # -*- coding = utf-8 -*-
 
-import os
 from time import sleep
 
 class WeiboSpider:
@@ -51,11 +50,11 @@ class WeiboSpider:
 
     def get_statuses(self, user_id):
         '''
-            get 100 statuses from user id=user_id
+            get 50 statuses from user id=user_id
         '''
         self.user_id = user_id
 
-        status = client.get.statuses__user_timeline(uid=user_id, count=100)
+        status = client.get.statuses__user_timeline(uid=user_id, count=50)
 
         status_id       = []
         status_writer   = []

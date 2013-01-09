@@ -24,7 +24,10 @@ Usage:
 question
 ---------------
 
-+ as the rate limit of user requests, grab all the result will cost so much time.
++ KeyError: 'user' in `status_writer.append(each_status.user.screen_name)` after run a few hours.
+
+
+
 
 
 
@@ -32,4 +35,3 @@ question
 
 [1]: http://open.weibo.com/wiki/API%E6%96%87%E6%A1%A3_V2
 [2]: http://code.google.com/p/sinaweibopy/wiki/OAuth2
-
