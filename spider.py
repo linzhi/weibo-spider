@@ -133,7 +133,7 @@ if __name__ == "__main__":
     except IOError:
         print "Error: open file failed"
 
-    for m in range(32, len(uid_set)):
+    for m in range(len(uid_set)):
         (tmp_id, tmp_writer, tmp_time, tmp_text, tmp_comments) = spider.get_statuses(uid_set[m])
 
         print "> statuses before filter: %d" % len(tmp_id)
