@@ -8,8 +8,8 @@ class Client:
     '''
         spider client
     '''
-    APP_KEY      = '2661800363'
-    APP_SECRET   = '49adf38e2a20d033ee2ddfc9397b7502' 
+    APP_KEY      = '3016018478'
+    APP_SECRET   = 'befe47ad6ef665e79fc444af1e60c31b' 
     CALLBACK_URL = 'https://api.weibo.com/oauth2/default.html'
     AUTH_URL     = 'https://api.weibo.com/oauth2/authorize'
     USEID        = 'testweiboapp1@sina.cn'

@@ -1,37 +1,41 @@
-sina weibo comments spider
+Sina Weibo Comments Spider
 ===========
+Spider.py is a script that can extract weibo user's _comments_ on his or her following list people through official API documents[1].
 
-+ extract weibo user's basic information, such as _statuses_ _comments_.
-this is official documentation[1].
-
-
-weibo
-------------------
-
-+ sina weibo python SDK and some examples[2]
+There are some sina weibo python SDK examples[2]
 
 
-spider
---------------------
-
-+ collect any user's followeing list persons' top 100 _statuses_ and then get top 50 _comments_, at last I grab the comments that I need.
+Explanation
+------------
+Collect user's following person's top 100 _statuses_ and then get top 50 _comments_, extract the comments of input uid.
 
 Usage:
 
     python spider.py
+    
+Then input the _uid_ of any weibo account of which one you choose
 
 
-question
----------------
+Issues
+-----------
++ APIerror[3] 10023 User requests out of rate limit
++ Takes long time to dig data
++ APP_KEY will out of date about 7 days 
 
-+ KeyError: 'user' in `status_writer.append(each_status.user.screen_name)` after run a few hours.
+
+Contributors
+------------
++ @[linzhi] To implement
 
 
-
-
+Todo List
+------------
++ Set the appropriate delay time
 
 
 
 
 [1]: http://open.weibo.com/wiki/API%E6%96%87%E6%A1%A3_V2
 [2]: http://code.google.com/p/sinaweibopy/wiki/OAuth2
+[3]: http://open.weibo.com/wiki/Error_code
+[linzhi]: https://github.com/linzhi
